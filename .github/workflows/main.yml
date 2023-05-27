@@ -20,4 +20,4 @@ jobs:
       - name: Push to hub
         env:
           HUGGING_FACE_TOKEN: ${{ secrets.HUGGING_FACE_TOKEN }}
-        run: git push --force https://mattrybin:$HUGGING_FACE_TOKEN@huggingface.co/spaces/PeacefulParenting/demo master
+        run: git push --force https://mattrybin:$HUGGING_FACE_TOKEN@huggingface.co/spaces/PeacefulParenting/demo main
