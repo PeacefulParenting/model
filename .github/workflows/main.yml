@@ -16,8 +16,8 @@ jobs:
       - name: Add remote 
         env:
           HF: ${{ secrets.HUGGING_FACE_TOKEN }}
-        run: git remote add space https://mattrybin:$HUGGING_FACE_TOKEN@huggingface.co/spaces/PeacefulParenting/demo
+        run: git remote add space https://mattrybin:$HUGGING_FACE_TOKEN@huggingface.co/spaces/peacefulparenting/demo
       - name: Push to hub
         env:
-          HF: ${{ secrets.HF }}
+          HF: ${{ secrets.HUGGING_FACE_TOKEN }}
         run: git push --force https://mattrybin:$HUGGING_FACE_TOKEN@huggingface.co/spaces/PeacefulParenting/demo main
